@@ -11,8 +11,6 @@ from transformers import AdamW, get_cosine_with_hard_restarts_schedule_with_warm
 import warnings
 warnings.filterwarnings('ignore')
 
-#data_list = [[1] for row in range(88550)]
-
 class MyDataset(Dataset):
 	def __init__(self, data_file_name, data_dir='.data/'):
 		super().__init__()
@@ -106,7 +104,6 @@ if __name__ == '__main__':
 	parser.add_argument('--warmup', default=300, type=int, action='store', help='Number of warmup steps to run')
 	parser.add_argument('--model_name', default='intention3e-4', type=str, action='store', help='Name of the model file')
 	parser.add_argument('--data_file', default='data/all_intention_gpt_train.txt', type=str, action='store', help='Name of the data file')
-	#parser.add_argument('--data_file', default='data/all.txt', type=str, action='store', help='Name of the data file')
 	parser.add_argument('--batch', type=int, default=32, action='store', help='Batch size')
 	parser.add_argument('--learning_rate', default=3e-4, type=float, action='store', help='Learning rate for the model')
 	parser.add_argument('--max_len', default=80, type=int, action='store', help='Maximum length of sequence')
