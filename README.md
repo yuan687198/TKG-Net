@@ -27,7 +27,7 @@ E.g., to initiate a training on **intention** prediction tasks (set --cms 'int')
 ```python
 python train_bert.py --cms int --batch_size 128 --epochs 1000 --model_name /data/yuanmq/hybridnet/0.2all_lr3e-4.pt --num_layer 6 --dim_head 64 --dim_inner 1024  --num_head 8 --dim_vis_feat 2048 --dropout 0.1 --rnn_layer 1 --checkpoint_path ./save/intentionbert2000 --info_json data/v2c_info.json --caption_json data/V2C_MSR-VTT_caption.json  --print_loss_every 10 --cuda --show_predict   
 ```
-You can download the 0.2all_lr3e-4.pt model in the [link] (https://pan.baidu.com/s/1iIukOY8_FiqNgiOih_GoWQ) (Extraction code: 86mv).
+You can download the 0.2all_lr3e-4.pt model in the [link](https://pan.baidu.com/s/1iIukOY8_FiqNgiOih_GoWQ) (Extraction code: 86mv).
 
 For completion evaluations:
 ```python
