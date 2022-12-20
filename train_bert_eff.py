@@ -133,7 +133,6 @@ def train(loader, model, optimizer, opt, cap_vocab, cms_vocab):
     text_encoder = BertModel.from_pretrained('/data/yuanmq/hybridnet/bert')
 
 
-
     for epoch in range(1, opt['epochs']+1):
         iteration = 0
         cap_n_correct_total = 0
