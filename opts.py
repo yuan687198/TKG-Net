@@ -222,5 +222,4 @@ def parse_opt():
                         default='a man')
 
     args = parser.parse_args()
-
     return args
