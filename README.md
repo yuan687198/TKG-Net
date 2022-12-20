@@ -1,5 +1,5 @@
 # GPT-based Knowledge Guiding Network for Commonsense Video Caption
-there will be more updates in the future.
+There will be more updates in the future.
 
 ## Background
 This repository is for the new task of [video-based commonsense captioning](https://arxiv.org/abs/2003.05162), which aims to generate event-wise captions and meanwhile provide multiple commonsense descriptions (e.g., attribute, effect and intention) about the underlying event in the video.
