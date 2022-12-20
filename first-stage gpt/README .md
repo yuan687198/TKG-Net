@@ -18,3 +18,4 @@ _* It is recommended that you tune the parameters for your task. Not doing so ma
 2. You can download gpt model from [here](https://pan.baidu.com/s/14B_fjE7kMOXnaPN7cLnyCg )(Extraction code: 1sp2). We provide the model of gpt-medium. You can also try gpt-large, gpt-xl, etc.
 
 
+
