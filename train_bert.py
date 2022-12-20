@@ -14,7 +14,6 @@ from transformers import GPT2Tokenizer, GPT2LMHeadModel
 from transformers import BertTokenizer, BertModel
 
 
-
 def choose_from_top_k_top_n(probs, k=50, p=0.8):
     ind = np.argpartition(probs, -k)[-k:]
     top_prob = probs[ind]
