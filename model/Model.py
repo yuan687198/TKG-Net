@@ -26,8 +26,6 @@ class HybirdNet(nn.Module):
         self.encoder = Encoder_video(d_vison=vis_emb,  d_i3d=i3d_emb, d_audio=audio_emb, d_model=d_model)
         self.encoder_cms = Encoder_video_cms(d_vison=vis_emb, d_i3d=i3d_emb, d_audio=audio_emb, d_model=d_model, d_cms=d_cms)
 
-        #self.encoder_transformer =  encoder_transformer(d_vison=vis_emb,  d_i3d=i3d_emb, d_audio=audio_emb, d_model=d_model)
-
         self.decoder = Decoder(
             n_tgt_vocab=n_cap_vocab, len_max_seq=cap_max_seq,
             d_word_vec=d_word_vec, d_model=d_model, d_inner=d_inner,
