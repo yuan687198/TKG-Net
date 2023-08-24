@@ -74,8 +74,8 @@ class Encoder_video(nn.Module):
         self.rnn_vis = nn.GRU(d_model, d_model, 1, batch_first=True, dropout=0.3)
         self.rnn_i3d = nn.GRU(d_model, d_model, 1, batch_first=True, dropout=0.3)
         self.rnn_aud = nn.GRU(d_model, d_model, 1, batch_first=True, dropout=0.3)
-        self.encoder_layer = nn.TransformerEncoderLayer(d_model=512, nhead=8)
-        self.transformer_encoder = nn.TransformerEncoder(self.encoder_layer, num_layers=6)
+        #self.encoder_layer = nn.TransformerEncoderLayer(d_model=512, nhead=8)
+        #self.transformer_encoder = nn.TransformerEncoder(self.encoder_layer, num_layers=6)
 
 
 
@@ -105,10 +105,10 @@ class Encoder_video(nn.Module):
 
 
         enc_output = torch.cat((src_emb, i3d_emb, aud_emb), dim=1)
-        enc_output = enc_output.permute(1, 0, 2)
+        #enc_output = enc_output.permute(1, 0, 2)
 
-        enc_output = self.transformer_encoder(enc_output)
-        enc_output = enc_output.permute(1, 0, 2)
+        #enc_output = self.transformer_encoder(enc_output)
+        #enc_output = enc_output.permute(1, 0, 2)
 
 
 
