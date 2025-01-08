@@ -8,7 +8,7 @@
 ```
 ## Generating Text
 ```
-1. python3 generate.py --model_name <model_name> --sentences <number_of_sentences> --label <class_of_training_data>
+1. python3 generate.py 
 ```
 
 _* It is recommended that you tune the parameters for your task. Not doing so may result in choosing default parameters and eventually giving sub-optimal performace._
