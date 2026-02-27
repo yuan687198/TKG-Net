@@ -235,7 +235,7 @@ def train(loader, model, optimizer, opt, cap_vocab, cms_vocab):
             cms_att_loss /= cms_att_n_word
 
 
-            loss = cap_loss + cms_int_loss# + cms_eff_loss + cms_att_loss
+            loss = cap_loss + 3*cms_int_loss# + cms_eff_loss + cms_att_loss
 
             loss.backward()
             optimizer.step_and_update_lr()
@@ -396,3 +396,4 @@ if __name__ == '__main__':
     opt = parse_opt()
     opt = vars(opt)
     main(opt)
+
